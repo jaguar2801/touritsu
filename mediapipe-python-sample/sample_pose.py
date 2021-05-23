@@ -103,6 +103,7 @@ def main():
 
         # 画面反映 #############################################################
         cv.imshow('MediaPipe Pose Demo', debug_image)
+        writer.write(debug_image)
 
     cap.release()
     writer.release()
