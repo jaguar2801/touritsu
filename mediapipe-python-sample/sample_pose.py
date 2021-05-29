@@ -49,12 +49,13 @@ def main():
     use_brect = args.use_brect
 
     # カメラ準備 ###############################################################
-    cap = cv.VideoCapture('../IMG_18931963.MOV')
+    data = '../IMG_18931963.MOV' #骨格推定をしたい動画のファイルのパスを指定ーーーーーーーーーーーーーーー
+    cap = cv.VideoCapture(data)
     width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH))
     height = int(cap.get(cv.CAP_PROP_FRAME_HEIGHT))
     fps = int(cap.get(cv.CAP_PROP_FPS))
     fourcc = cv.VideoWriter_fourcc(*'MP4V')
-    writer = cv.VideoWriter('pose.mp4', fourcc, fps, (width, height))
+    writer = cv.VideoWriter('../'+data+'_pose.mp4', fourcc, fps, (width, height))　
 
     cap.set(cv.CAP_PROP_FRAME_WIDTH, cap_width)
     cap.set(cv.CAP_PROP_FRAME_HEIGHT, cap_height)
