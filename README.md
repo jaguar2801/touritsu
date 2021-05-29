@@ -1,6 +1,6 @@
 # touritsu
 
-touritsu/
+touritsu
 |-mediapipe-python-sample/
 |     |-sample_pose.py/
 |/
