@@ -49,8 +49,8 @@ def main():
     use_brect = args.use_brect
 
     # カメラ準備 ###############################################################
-    data = '../IMG_18931963.MOV' #骨格推定をしたい動画のファイルのパスを指定ーーーーーーーーーーーーーーー
-    cap = cv.VideoCapture(data)
+    data = 'IMG_18931963.MOV' #骨格推定をしたい動画のファイルのパスを指定ーーーーーーーーーーーーーーー
+    cap = cv.VideoCapture('../'+data)
     width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH))
     height = int(cap.get(cv.CAP_PROP_FRAME_HEIGHT))
     fps = int(cap.get(cv.CAP_PROP_FPS))
