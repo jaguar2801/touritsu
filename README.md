@@ -1,9 +1,9 @@
 # touritsu
 
-touritsu
-|-mediapipe-python-sample
-|     |-sample_pose.py
+touritsu \n
+|-mediapipe-python-sample \n
+|     |-sample_pose.py \n
 |
-|-untitle.py
-|-readme.md
-|-(骨格推定したい動画）
+|-untitle.py \n
+|-readme.md \n
+|-(骨格推定したい動画） \n
